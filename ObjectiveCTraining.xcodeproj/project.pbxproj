@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					E310E3E71D8A71FC00C39469 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5J5Q4ZGXZR;
 						ProvisioningStyle = Automatic;
 					};
 					E310E4001D8A71FC00C39469 = {
@@ -422,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5J5Q4ZGXZR;
 				INFOPLIST_FILE = ObjectiveCTraining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.starhoshi.ObjectiveCTraining;
@@ -433,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5J5Q4ZGXZR;
 				INFOPLIST_FILE = ObjectiveCTraining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.starhoshi.ObjectiveCTraining;
