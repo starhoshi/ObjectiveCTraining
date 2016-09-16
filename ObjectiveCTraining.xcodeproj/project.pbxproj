@@ -62,6 +62,7 @@
 		E37319431D8AEC0D00FF5478 /* SampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleClass.m; sourceTree = "<group>"; };
 		E37319451D8AF93C00FF5478 /* SampleClass+Suffix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SampleClass+Suffix.m"; sourceTree = "<group>"; };
 		E37319481D8AF94C00FF5478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = "Base.lproj/SampleClass+Suffix.h"; sourceTree = "<group>"; };
+		E37319491D8BC8BC00FF5478 /* MyLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLibrary.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +120,7 @@
 				E37319431D8AEC0D00FF5478 /* SampleClass.m */,
 				E310E3EF1D8A71FC00C39469 /* AppDelegate.m */,
 				E310E3F11D8A71FC00C39469 /* ViewController.h */,
+				E37319491D8BC8BC00FF5478 /* MyLibrary.h */,
 				E37319401D8AEAF200FF5478 /* SampleClassDelegate.h */,
 				E310E3F21D8A71FC00C39469 /* ViewController.m */,
 				E310E3F41D8A71FC00C39469 /* Main.storyboard */,
