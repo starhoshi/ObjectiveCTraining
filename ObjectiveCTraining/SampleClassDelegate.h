@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SampleClassDelegate.m
 //  ObjectiveCTraining
 //
 //  Created by Kensuke Hoshikawa on 2016/09/15.
@@ -7,12 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SampleClass.h"
-#import "SampleClass+Suffix.h"
 
-@interface ViewController : UIViewController
-
--(void) exec;
-
+@protocol SampleClassDelegate
+- (NSString*) toStringDao;
 @end
-

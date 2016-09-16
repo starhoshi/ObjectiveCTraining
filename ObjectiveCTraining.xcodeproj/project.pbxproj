@@ -15,6 +15,10 @@
 		E310E3FB1D8A71FC00C39469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E310E3F91D8A71FC00C39469 /* LaunchScreen.storyboard */; };
 		E310E4061D8A71FC00C39469 /* ObjectiveCTrainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E310E4051D8A71FC00C39469 /* ObjectiveCTrainingTests.m */; };
 		E310E4111D8A71FC00C39469 /* ObjectiveCTrainingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E310E4101D8A71FC00C39469 /* ObjectiveCTrainingUITests.m */; };
+		E373193E1D8A8B9400FF5478 /* Hoge.m in Sources */ = {isa = PBXBuildFile; fileRef = E373193D1D8A8B9400FF5478 /* Hoge.m */; };
+		E37319411D8AEAF200FF5478 /* SampleClassDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = E37319401D8AEAF200FF5478 /* SampleClassDelegate.h */; };
+		E37319441D8AEC0D00FF5478 /* SampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E37319431D8AEC0D00FF5478 /* SampleClass.m */; };
+		E37319461D8AF93C00FF5478 /* SampleClass+Suffix.m in Sources */ = {isa = PBXBuildFile; fileRef = E37319451D8AF93C00FF5478 /* SampleClass+Suffix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		E310E40C1D8A71FC00C39469 /* ObjectiveCTrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCTrainingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E310E4101D8A71FC00C39469 /* ObjectiveCTrainingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTrainingUITests.m; sourceTree = "<group>"; };
 		E310E4121D8A71FC00C39469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E373193D1D8A8B9400FF5478 /* Hoge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hoge.m; sourceTree = "<group>"; };
+		E373193F1D8A8BA300FF5478 /* Hoge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hoge.h; sourceTree = "<group>"; };
+		E37319401D8AEAF200FF5478 /* SampleClassDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleClassDelegate.h; sourceTree = "<group>"; };
+		E37319421D8AEB3600FF5478 /* SampleClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleClass.h; sourceTree = "<group>"; };
+		E37319431D8AEC0D00FF5478 /* SampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleClass.m; sourceTree = "<group>"; };
+		E37319451D8AF93C00FF5478 /* SampleClass+Suffix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SampleClass+Suffix.m"; sourceTree = "<group>"; };
+		E37319481D8AF94C00FF5478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = "Base.lproj/SampleClass+Suffix.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +113,21 @@
 			isa = PBXGroup;
 			children = (
 				E310E3EE1D8A71FC00C39469 /* AppDelegate.h */,
+				E37319421D8AEB3600FF5478 /* SampleClass.h */,
+				E37319451D8AF93C00FF5478 /* SampleClass+Suffix.m */,
+				E37319471D8AF94C00FF5478 /* SampleClass+Suffix.h */,
+				E37319431D8AEC0D00FF5478 /* SampleClass.m */,
 				E310E3EF1D8A71FC00C39469 /* AppDelegate.m */,
 				E310E3F11D8A71FC00C39469 /* ViewController.h */,
+				E37319401D8AEAF200FF5478 /* SampleClassDelegate.h */,
 				E310E3F21D8A71FC00C39469 /* ViewController.m */,
 				E310E3F41D8A71FC00C39469 /* Main.storyboard */,
 				E310E3F71D8A71FC00C39469 /* Assets.xcassets */,
 				E310E3F91D8A71FC00C39469 /* LaunchScreen.storyboard */,
 				E310E3FC1D8A71FC00C39469 /* Info.plist */,
 				E310E3EB1D8A71FC00C39469 /* Supporting Files */,
+				E373193D1D8A8B9400FF5478 /* Hoge.m */,
+				E373193F1D8A8BA300FF5478 /* Hoge.h */,
 			);
 			path = ObjectiveCTraining;
 			sourceTree = "<group>";
@@ -274,7 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E373193E1D8A8B9400FF5478 /* Hoge.m in Sources */,
+				E37319461D8AF93C00FF5478 /* SampleClass+Suffix.m in Sources */,
 				E310E3F31D8A71FC00C39469 /* ViewController.m in Sources */,
+				E37319441D8AEC0D00FF5478 /* SampleClass.m in Sources */,
+				E37319411D8AEAF200FF5478 /* SampleClassDelegate.h in Sources */,
 				E310E3F01D8A71FC00C39469 /* AppDelegate.m in Sources */,
 				E310E3ED1D8A71FC00C39469 /* main.m in Sources */,
 			);
@@ -326,6 +348,14 @@
 				E310E3FA1D8A71FC00C39469 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E37319471D8AF94C00FF5478 /* SampleClass+Suffix.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E37319481D8AF94C00FF5478 /* Base */,
+			);
+			name = "SampleClass+Suffix.h";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -508,6 +538,7 @@
 				E310E4171D8A71FC00C39469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E310E4181D8A71FC00C39469 /* Build configuration list for PBXNativeTarget "ObjectiveCTrainingTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +547,7 @@
 				E310E41A1D8A71FC00C39469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E310E41B1D8A71FC00C39469 /* Build configuration list for PBXNativeTarget "ObjectiveCTrainingUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +556,7 @@
 				E310E41D1D8A71FC00C39469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
