@@ -19,6 +19,7 @@
 		E37319411D8AEAF200FF5478 /* SampleClassDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = E37319401D8AEAF200FF5478 /* SampleClassDelegate.h */; };
 		E37319441D8AEC0D00FF5478 /* SampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E37319431D8AEC0D00FF5478 /* SampleClass.m */; };
 		E37319461D8AF93C00FF5478 /* SampleClass+Suffix.m in Sources */ = {isa = PBXBuildFile; fileRef = E37319451D8AF93C00FF5478 /* SampleClass+Suffix.m */; };
+		E373194C1D8CF84C00FF5478 /* Sankaku.m in Sources */ = {isa = PBXBuildFile; fileRef = E373194B1D8CF84C00FF5478 /* Sankaku.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		E37319451D8AF93C00FF5478 /* SampleClass+Suffix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SampleClass+Suffix.m"; sourceTree = "<group>"; };
 		E37319481D8AF94C00FF5478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = "Base.lproj/SampleClass+Suffix.h"; sourceTree = "<group>"; };
 		E37319491D8BC8BC00FF5478 /* MyLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLibrary.h; sourceTree = "<group>"; };
+		E373194A1D8CF84300FF5478 /* Sankaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sankaku.h; sourceTree = "<group>"; };
+		E373194B1D8CF84C00FF5478 /* Sankaku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sankaku.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				E310E3F11D8A71FC00C39469 /* ViewController.h */,
 				E37319491D8BC8BC00FF5478 /* MyLibrary.h */,
 				E37319401D8AEAF200FF5478 /* SampleClassDelegate.h */,
+				E373194A1D8CF84300FF5478 /* Sankaku.h */,
+				E373194B1D8CF84C00FF5478 /* Sankaku.m */,
 				E310E3F21D8A71FC00C39469 /* ViewController.m */,
 				E310E3F41D8A71FC00C39469 /* Main.storyboard */,
 				E310E3F71D8A71FC00C39469 /* Assets.xcassets */,
@@ -296,6 +301,7 @@
 			files = (
 				E373193E1D8A8B9400FF5478 /* Hoge.m in Sources */,
 				E37319461D8AF93C00FF5478 /* SampleClass+Suffix.m in Sources */,
+				E373194C1D8CF84C00FF5478 /* Sankaku.m in Sources */,
 				E310E3F31D8A71FC00C39469 /* ViewController.m in Sources */,
 				E37319441D8AEC0D00FF5478 /* SampleClass.m in Sources */,
 				E37319411D8AEAF200FF5478 /* SampleClassDelegate.h in Sources */,
@@ -455,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DEVELOPMENT_TEAM = 5J5Q4ZGXZR;
 				INFOPLIST_FILE = ObjectiveCTraining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -467,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DEVELOPMENT_TEAM = 5J5Q4ZGXZR;
 				INFOPLIST_FILE = ObjectiveCTraining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

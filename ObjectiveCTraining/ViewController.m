@@ -23,33 +23,24 @@ typedef struct Person {
 } Person;
 
 typedef enum Season {SPRING, SUMMER, AUTUMN, WINTER} Season;
+typedef enum Color {RED, GREEN, BLUE, YELLOW} Color;
 
-@interface Sankaku : NSObject {
-@private
-  int teihen;
-  int takasa;
+@interface Zukei :NSObject{
+@protected
+  Color cl;
 }
-@property int teihen, takasa;
+@property Color cl;
 @end
 
-@implementation Sankaku
-@synthesize teihen, takasa;
-
-+(int) numSide {
-  return 3;
-}
-
-- (float) getAreaOfTriangle{
-  float menseki;
-  menseki = (float) teihen * (float) takasa / 2;
-  return menseki;
-}
-
-- (void) sizeBigger : (int) widthRatio : (int) heightRatio {
-  teihen = teihen * widthRatio;
-  takasa = takasa * heightRatio;
+@implementation Zukei
+@synthesize cl;
++(void) dispTheoryOfArea{
+  NSLog(@"公式などない");
 }
 @end
+
+
+
 
 
 @implementation ViewController
@@ -107,16 +98,18 @@ typedef enum Season {SPRING, SUMMER, AUTUMN, WINTER} Season;
   Season sn = SPRING;
   NSLog(@"sn%d", sn);
 
-  Sankaku *sankakuA = [[Sankaku alloc] init];
-  [sankakuA setTakasa:10];
-
-  Sankaku *sankakuB = [[Sankaku alloc] init];
-  [sankakuB setTakasa:10];
-  [sankakuA setTeihen:10];
-  sankakuA.teihen = 10;
-  NSLog(@"%f", [sankakuB getAreaOfTriangle]);
-  [sankakuB sizeBigger:2 :2];
-  NSLog(@"%f", [sankakuB getAreaOfTriangle]);
+//  Sankaku *sankakuA = [[Sankaku alloc] init];
+//  [sankakuA setTakasa:10];
+//
+//  Sankaku *sankakuB = [[Sankaku alloc] init];
+//  [sankakuB setTakasa:10];
+//  [sankakuA setTeihen:10];
+//  sankakuA.teihen = 10;
+//  sankakuA.cl = GREEN;
+//  [Sankaku dispTheoryOfArea];
+//  NSLog(@"%f", [sankakuB getAreaOfTriangle]);
+//  [sankakuB sizeBigger:2 :2];
+//  NSLog(@"%f", [sankakuB getAreaOfTriangle]);
 }
 
 void dispOnePlusOne(int num){
@@ -133,8 +126,6 @@ void dispOnePlusOne(int num){
   SampleClass* sample = [[SampleClass alloc] init];
   id<SampleClassDelegate> delegate = sample;
 
-  NSNumber* num = [NSNumber numberWithInteger:120];
-  [num stringValue];
 
   [sample setData:@"1回目" num:100];
   NSLog(@"%@", [sample toString]);
@@ -144,6 +135,18 @@ void dispOnePlusOne(int num){
   NSLog(@"delegate:%@", [delegate toStringDao]);
 
   [sample toStringSuffix:self callback:@selector(callback:)];
+
+  NSString *str = @"aaa";
+  NSNumber *num = [[NSNumber alloc]initWithInt:1];
+  NSArray *arr = [[NSArray alloc] initWithObjects:str, num, nil];
+  [[arr objectAtIndex:1] intValue];
+  NSArray *array = [arr sortedArrayUsingSelector:@selector(compare:)];
+  @try {
+[arr objectAtIndex:100];
+  } @catch (NSException *exception) {
+    NSLog(@"%@", exception.name);
+  }
+
 
 }
 
